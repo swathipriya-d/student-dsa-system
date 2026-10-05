@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: student-record-management
+    env: python
+    buildCommand: bash build.sh
+    startCommand: gunicorn app:app
+    plan: free
